@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="css/libs.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Главная</title>
+</head>
+
+
+<style>
+    .wrapper a {
+        font-size: 30px;
+        text-transform: capitalize;
+    }
+
+    .wrapper button {
+        margin-bottom: 25px;
+        width: 300px;
+        height: 45px;
+    }
+</style>
+
+<body>
+
+    <div class="wrapper" style="padding: 50px;">
+        <a href="index.html" style="display: block; margin-bottom: 20px;">
+            Главная
+        </a>
+
+
+
+
+        <button style="border: 2px solid #000;margin-bottom: 20px;" data-bs-toggle="modal" data-bs-target="#quickOrder">
+            Быстрый заказ
+        </button>
+
+    </div>
+
+    <div class="modal" id="reqModal">
+        <button type="button" class="modal__close _close-modal" data-bs-dismiss="modal" aria-label="Close">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M34.1416 5.858C41.9518 13.6682 41.9523 26.3313 34.1416 34.142C26.3314 41.9522 13.6683 41.9522 5.8576 34.1416C-1.95261 26.3309 -1.95261 13.6682 5.85805 5.858C13.6683 -1.95267 26.3314 -1.95267 34.1416 5.858ZM25.7638 24.2891L21.474 19.9998L25.7638 15.71C26.7345 14.7393 25.2598 13.2651 24.2896 14.2358L19.9998 18.5256L15.71 14.2358C14.7394 13.2651 13.2652 14.7398 14.2354 15.71L18.5256 19.9998L14.2358 24.2891C13.2652 25.2598 14.7398 26.734 15.7105 25.7633L19.9998 21.474L24.2896 25.7638C25.2598 26.734 26.7345 25.2598 25.7638 24.2891ZM37.9145 19.9998C37.9145 10.1056 29.894 2.08511 19.9998 2.08511C10.106 2.08511 2.08517 10.106 2.08517 19.9998C2.08517 29.894 10.1056 37.9144 19.9998 37.9144C29.8936 37.9144 37.9145 29.8936 37.9145 19.9998Z" fill="black" />
+            </svg>
+        </button>
+        <div class="modal__dialog">
+            <div class="modal__title text60 text32-mob">
+                Оставить заявку
+            </div>
+            <div class="modal-form">
+                <fieldset class="fg">
+                    <input type="text" placeholder="Ваше имя">
+                </fieldset>
+                <fieldset class="fg">
+                    <input type="text" placeholder="Ваш телефон">
+                </fieldset>
+                <fieldset class="fg">
+                    <input type="text" placeholder="Ваш e-mail">
+                </fieldset>
+                <div class="modal-form__hint">
+                    <span>
+                    Нажимая на кнопку “отправить”, я соглашаюсь с политикой обработки персональных данных
+                </span>
+                </div>
+                <button class="modal-form__btn m-btn m-btn-primary">
+                    <span>Отправить</span>
+                    <img src="img/next.svg" alt="">
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!--  -->
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.min.js"></script>
+
+</body>
+
+</html>
